@@ -62,6 +62,7 @@ img {
   background-image: url(../images/header-background-mobile-1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -116,14 +117,15 @@ img {
   font-weight: 700;
   line-height: 100%; /* 24px */
 
-  margin-bottom: 270px;
+  margin-bottom: 300px;
 }
 
 .header-wrapper {
   padding: 20px;
   border-radius: 10px;
   background: rgba(217, 230, 255, 0.07);
-  backdrop-filter: blur(1.7523363828659058px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 
   max-width: 345px;
   margin-left: auto;
@@ -311,11 +313,11 @@ img {
   font-family: 'Tenor Sans';
   font-size: 21px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 120%; /* 25.2px */
+  font-weight: 600;
+  line-height: 70%; /* 25.2px */
   text-transform: uppercase;
 
-  max-width: 236px;
+  max-width: 226px;
   margin-left: auto;
   margin-right: auto;
 
@@ -329,6 +331,8 @@ img {
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 16.8px */
+
+  text-transform: lowercase;
 }
 
 .gift-text {
@@ -373,7 +377,7 @@ img {
   line-height: normal;
   letter-spacing: -0.48px;
 
-  width: 70px;
+  width: 60px;
 }
 
 .countdown-doubledot {
@@ -576,13 +580,10 @@ img {
 
 /* about-author */
 
-.about-author {
-}
-
 .about-author .container {
   padding-left: 0;
   padding-right: 0;
-  max-width: 428px;
+  max-width: 430px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -602,10 +603,10 @@ img {
 }
 
 .about-author .background {
-  height: 1037px;
-  padding-bottom: 60px;
+  padding-top: 470px;
+  padding-bottom: 140px;
 
-  max-width: 428px;
+  max-width: 430px;
   margin-left: auto;
   margin-right: auto;
   background-image: url(../images/about-author-mobile-1x.png);
@@ -613,11 +614,12 @@ img {
   background-size: cover;
 }
 
-.about-author .sticky {
-  padding-top: 400px;
-
-  position: sticky;
-  top: 0;
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .about-author .background {
+    background-image: url(../images/about-author-mobile-2x.png);
+  }
 }
 
 .author-name {
@@ -994,8 +996,8 @@ img {
 
 .result-fire-title {
   position: absolute;
-  left: 45%;
-  top: -5px;
+  left: 42%;
+  top: -8px;
 }
 
 .results-title {
@@ -1168,6 +1170,11 @@ img {
   margin-right: auto;
 }
 
+.how-study-list .list-item span {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 .study-do-it {
   color: #ff9c08;
   font-family: 'Tenor Sans';
@@ -1268,16 +1275,15 @@ img {
 /* section-questions */
 
 .section-questions {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
   background: linear-gradient(180deg, #f2f7ff 0%, #8fb5ff 100%);
 }
 
 .section-questions .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-image: url(../images/question-image-mobile-1x.png);
   background-repeat: no-repeat;
-  background-position: top 0 right 0;
+  background-position: top 10px right 0;
 }
 
 .questions-title {
@@ -1340,12 +1346,11 @@ img {
 
 .content-two p {
   color: #171717;
-  font-family: 'Futura PT';
-  font-size: 15px;
+  font-family: Raleway;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110%; /* 14.3px */
-  letter-spacing: -0.26px;
+  line-height: 110%; /* 15.4px */
 
   padding-top: 10px;
 }
@@ -1358,11 +1363,11 @@ img {
 
 .question-two-name > p {
   color: #171717;
-  font-family: 'Futura PT';
+  font-family: Raleway;
   font-size: 15px;
   font-style: normal;
-  font-weight: 450;
-  line-height: 100%; /* 15px */
+  font-weight: 600;
+  line-height: 105%; /* 15.75px */
 
   max-width: 226px;
 }
