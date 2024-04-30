@@ -12,7 +12,7 @@ export default () => {
           optimizationLevel: 7,
         },
         mozjpeg: {
-          quality: 20,
+          quality: 80,
         },
         pngquant: {
           quality: [0.8, 0.9],
