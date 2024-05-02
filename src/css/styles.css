@@ -1,7 +1,12 @@
 @import '../../node_modules/vanilla-infinite-marquee/infinite-marquee.css';
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1,
